@@ -1,3 +1,5 @@
+// ANUGYA MEHROTRA
+
 // TIC TAC TOE VANILLA JAVASCRIPT
 
 // Game variables & predefined values (prelims)
