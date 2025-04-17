@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+
+        <style>
+        /* Basic reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Game board styling */
+#three-by-three-table {
+  margin: 20px auto;
+}
+
+#game-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#game-table caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#game-table td {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #333;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#game-table td:hover {
+  background-color: #f0f0f0;
+}
+
+/* Remove borders for outer cells */
+#game-table tr:first-child td {
+  border-top: none;
+}
+
+#game-table tr:last-child td {
+  border-bottom: none;
+}
+
+#game-table td:first-child {
+  border-left: none;
+}
+
+#game-table td:last-child {
+  border-right: none;
+}
+
+/* Scoreboard styling */
+#scoreboard {
+  margin-bottom: 20px;
+}
+
+#scoreboard caption {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Button styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Game over styling */
+#gameover {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8d7da;
+  border-radius: 5px;
+}
+
+#gameover caption {
+  font-size: 24px;
+  font-weight: bold;
+  color: #721c24;
+  margin-bottom: 10px;
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+/* X and O styling (for JavaScript) */
+.x-mark {
+  color: #64b96a;
+}
+
+.o-mark {
+  color: #db3434;
+}
+        </style>
+    </head>
+
+        <body>
+            <div id = "container">
+                <div id = "startGame">
+
+                <button id="start-button">Start Game</button> <!-- START BUTTON AREA - REFER TO JS -->
+
+                </div>
+
+                <div id="three-by-three-table">
+                    <table id="game-table">
+                        <caption>Tic Tac Toe!</caption> <!-- ACCESSED BY JS THRU blocks[i] = document.getElementById("block" + i); (NEUTRAL)-->
+                        <tr> 
+                            <td id="block0"></td>
+                            <td id="block1"></td>
+                            <td id="block2"></td>
+                        </tr>
+                        <tr>
+                            <td id="block3"></td>
+                            <td id="block4"></td>
+                            <td id="block5"></td>
+                        </tr>
+                        <tr>
+                            <td id="block6"></td>
+                            <td id="block7"></td>
+                            <td id="block8"></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div id="gameover" class="hidden">
+                  <caption>Game Over!</caption>
+                  <button id="restart-button">Restart Game</button> <!-- RESTART HERE - REFER TO JS -->
+              </div>
+              
+
+                <script src="gamescript1.js"></script>
+        </body>
+
+</html>
