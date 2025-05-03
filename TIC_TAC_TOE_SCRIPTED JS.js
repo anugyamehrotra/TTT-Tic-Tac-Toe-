@@ -151,6 +151,6 @@ blocks[i] = document.getElementById("block" + i);
 
 This line simplifies having to write out the getElementById for each block. It uses a loop to create an array of blocks based on the array length of available cells in the table (REFER TO HTML), where each block is accessed by its index of 0-8
 
-(Most of these notes are for personal review given how in-depth and complicated this code is for me to understand, so I can always refer back to it in the future if I need to!)
+(NOTES ARE FOR PERSONAL REVIEW AND REFERENCE)
 
 */
