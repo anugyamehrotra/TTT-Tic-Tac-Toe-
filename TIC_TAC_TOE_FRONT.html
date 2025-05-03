@@ -7,7 +7,7 @@
 
 
         <style>
-        /* Basic reset and font settings */
+        
 * {
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 
-/* Game board styling */
+/* STYLE FEATURESOF GAMEBOARD */
 #three-by-three-table {
   margin: 20px auto;
 }
@@ -66,7 +66,7 @@ body {
   background-color: #f0f0f0;
 }
 
-/* Remove borders for outer cells */
+
 #game-table tr:first-child td {
   border-top: none;
 }
@@ -83,7 +83,7 @@ body {
   border-right: none;
 }
 
-/* Scoreboard styling */
+/* SCORE BOARD LOGGING & STYLE */
 #scoreboard {
   margin-bottom: 20px;
 }
@@ -95,7 +95,7 @@ body {
   color: #333;
 }
 
-/* Button styling */
+/* USER BUTTONS STYLING & INTERACTIVE FEATURES */
 button {
   background-color: #4CAF50;
   color: white;
@@ -108,11 +108,11 @@ button {
   margin: 10px 0;
 }
 
+
 button:hover {
   background-color: #45a049;
 }
 
-/* Game over styling */
 #gameover {
   margin-top: 20px;
   padding: 15px;
@@ -127,12 +127,12 @@ button:hover {
   margin-bottom: 10px;
 }
 
-/* Utility classes */
+
 .hidden {
   display: none;
 }
 
-/* X and O styling (for JavaScript) */
+/* USER PLAYER ASPECTS AND STYLING (X & O CHARACTERS FOR VIEWABILITY) */
 .x-mark {
   color: #64b96a;
 }
@@ -143,6 +143,7 @@ button:hover {
         </style>
     </head>
 
+<!-- MAIN BODY STYLING -->
         <body>
             <div id = "container">
                 <div id = "startGame">
@@ -151,6 +152,7 @@ button:hover {
 
                 </div>
 
+                <!-- MAIN TABLE / GAME LAYOUT -->
                 <div id="three-by-three-table">
                     <table id="game-table">
                         <caption>Tic Tac Toe!</caption> <!-- ACCESSED BY JS THRU blocks[i] = document.getElementById("block" + i); (NEUTRAL)-->
@@ -173,11 +175,7 @@ button:hover {
                 </div>
 
 
-                <div id="gameover" class="hidden">
-                  <caption>Game Over!</caption>
-                  <button id="restart-button">Restart Game</button> <!-- RESTART HERE - REFER TO JS -->
-              </div>
-              
+                      
 
                 <script src="gamescript1.js"></script>
         </body>
